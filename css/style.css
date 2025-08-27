@@ -4,11 +4,10 @@
 }
 
 body {
-  background-color: #EFEFEF;
-  font-family: 'Roboto', sans-serif;
+  background-color: #efefef;
+  font-family: "Roboto", sans-serif;
   color: #686868;
   text-transform: uppercase;
-  
 }
 
 #container {
@@ -26,7 +25,7 @@ h1 {
 }
 
 a {
-  color: #FF0000;
+  color: #ff0000;
   text-decoration: none;
 }
 
@@ -35,7 +34,7 @@ a:hover {
 }
 
 .box {
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   padding: 20px;
 }
 
@@ -57,11 +56,13 @@ header a {
   grid-row: 2;
 }
 
-#settings > * { margin-right: 20px }
+#settings > * {
+  margin-right: 20px;
+}
 
 button,
 input {
-  background-color: #F0F0F0;
+  background-color: #f0f0f0;
   border: none;
   text-transform: uppercase;
   padding: 5px;
@@ -86,7 +87,9 @@ button {
   line-height: 22px;
 }
 
-#info > div > span { margin-right: 5px; }
+#info > div > span {
+  margin-right: 5px;
+}
 
 .color-block {
   display: table-cell;
@@ -95,9 +98,13 @@ button {
   border: 1px solid #686868;
 }
 
-.color-block-black { background-color: #000000; }
+.color-block-black {
+  background-color: #000000;
+}
 
-.color-block-cross { position: relative; }
+.color-block-cross {
+  position: relative;
+}
 
 .color-block-cross span {
   position: absolute;
@@ -122,7 +129,9 @@ button {
   transform: rotate(-45deg);
 }
 
-#info .color-block-red { background-color: #FF0000; }
+#info .color-block-red {
+  background-color: #ff0000;
+}
 
 #input-grid {
   grid-column: 1 / 2;
@@ -136,7 +145,7 @@ button {
 #loading {
   display: none;
   position: absolute;
-  background-color: rgba(100,100,100,.2);
+  background-color: rgba(100, 100, 100, 0.2);
   top: 0;
   bottom: 0;
   right: 0;
@@ -146,13 +155,28 @@ button {
 #loading h2 {
   text-align: center;
   line-height: 600px;
-  color: #FFFFFF;
+  color: #ffffff;
   text-shadow: 2px 2px 2px #333333;
 }
 
-.calculating #loading { display: block; }
+.calculating #loading {
+  display: block;
+}
 
 footer {
   grid-column: 1 / 3;
   font-size: 14px;
+}
+
+#scrollable-view {
+  width: fit-content;
+  height: fit-content;
+}
+
+#scrollable-view-wrapper {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 30rem;
+  grid-column: 1 / 3;
 }
